@@ -22,7 +22,7 @@ function printJson(value) {
 }
 
 function printHelp() {
-  process.stdout.write(`Super Lobster OS\n\nCommands:\n  lobsteros demo --message \"ship the release checklist\"\n  lobsteros plan --message \"audit the auth flow\"\n  lobsteros guard --command \"git push origin main\"\n  lobsteros route --target github\n  lobsteros learn --note \"billing retries depend on redis locks\"\n  lobsteros doctor\n`);
+  process.stdout.write(`Super Lobster OS\n\nCommands:\n  lobsteros init --workspace \"Payments Core\"\n  lobsteros demo --message \"ship the release checklist\"\n  lobsteros plan --message \"audit the auth flow\"\n  lobsteros report --message \"cut a release candidate\"\n  lobsteros guard --command \"git push origin main\"\n  lobsteros route --target github\n  lobsteros learn --note \"billing retries depend on redis locks\"\n  lobsteros doctor\n`);
 }
 
 const { command, args } = parseArgs(process.argv.slice(2));
@@ -33,6 +33,16 @@ switch (command) {
   case 'plan': {
     const message = args.message || args._.join(' ') || 'Map the next mission';
     printJson(control.brief(message));
+    break;
+  }
+  case 'report': {
+    const message = args.message || args._.join(' ') || 'Map the next mission';
+    const result = control.report(message);
+    if (args.format === 'json') {
+      printJson(result);
+    } else {
+      process.stdout.write(result.markdown);
+    }
     break;
   }
   case 'guard': {
@@ -48,6 +58,11 @@ switch (command) {
   case 'learn': {
     const note = args.note || args._.join(' ') || 'No note provided.';
     printJson(control.learn(note));
+    break;
+  }
+  case 'init': {
+    const workspaceName = args.workspace || args._.join(' ') || 'Unnamed Workspace';
+    printJson(control.init(workspaceName));
     break;
   }
   case 'doctor': {

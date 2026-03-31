@@ -21,6 +21,10 @@ The core loop is simple:
 
 Stores durable mission context under `.lobsteros/memory.json` so a repository can accumulate useful operational history.
 
+### `Config`
+
+Stores workspace identity, channel profiles, and policy defaults under `.lobsteros/config.json`.
+
 ### `Planner`
 
 Generates a structured sequence of execution steps. The planner is intentionally simple today, but the interface is designed so learned heuristics, models, or policy engines can swap in later.
@@ -38,6 +42,10 @@ The design goal is explicitness. The runtime should always be able to explain wh
 ### `ChannelRouter`
 
 Embeds the OpenClaw-style insight that not all work belongs in the terminal. Some missions should surface in GitHub, some in Slack, some on mobile-first channels.
+
+### `Reporter`
+
+Turns mission briefs into markdown artifacts that can be pasted into GitHub issues, PR descriptions, team updates, or handoff notes.
 
 ## Future Architecture
 

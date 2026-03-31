@@ -1,6 +1,24 @@
 {
+  "workspaceName": "Payments Core",
+  "missionStyle": "operator",
   "mission": "Own the workspace, not just the chat thread.",
-  "channels": ["terminal", "github", "slack"],
+  "channels": {
+    "terminal": {
+      "latency": "instant",
+      "trust": "high",
+      "useCase": "local execution and code navigation"
+    },
+    "github": {
+      "latency": "medium",
+      "trust": "medium",
+      "useCase": "handoffs, issues, and review loops"
+    },
+    "slack": {
+      "latency": "medium",
+      "trust": "medium",
+      "useCase": "team coordination and release communication"
+    }
+  },
   "policies": {
     "destructiveCommands": "deny",
     "deployments": "review"

@@ -1,0 +1,63 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="60" y1="40" x2="1200" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08111F"/>
+      <stop offset="0.48" stop-color="#102746"/>
+      <stop offset="1" stop-color="#1C4B5A"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="864" y1="108" x2="1094" y2="525" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7A18"/>
+      <stop offset="1" stop-color="#FFD166"/>
+    </linearGradient>
+    <linearGradient id="card" x1="170" y1="132" x2="1003" y2="588" gradientUnits="userSpaceOnUse">
+      <stop stop-color="rgba(255,255,255,0.20)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0.06)"/>
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="1280" height="720" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" rx="32" fill="url(#bg)"/>
+  <g opacity="0.35" filter="url(#blur)">
+    <circle cx="1024" cy="131" r="160" fill="#FF7A18"/>
+    <circle cx="216" cy="642" r="180" fill="#00C2A8"/>
+    <circle cx="1161" cy="608" r="130" fill="#FFD166"/>
+  </g>
+
+  <rect x="76" y="76" width="1128" height="568" rx="28" fill="url(#card)" stroke="rgba(255,255,255,0.18)"/>
+
+  <rect x="120" y="116" width="170" height="34" rx="17" fill="rgba(255,255,255,0.12)"/>
+  <text x="146" y="139" fill="#DDEBFF" font-family="Georgia, 'Times New Roman', serif" font-size="16" letter-spacing="1.5">SUPER LOBSTER OS</text>
+
+  <text x="120" y="230" fill="white" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700">A Mission Control Layer</text>
+  <text x="120" y="306" fill="white" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700">for Real Developer Work</text>
+  <text x="122" y="366" fill="#D4E4F7" font-family="'Trebuchet MS', Helvetica, sans-serif" font-size="28">Channel-native orchestration meets workspace-native execution.</text>
+
+  <rect x="122" y="426" width="236" height="72" rx="20" fill="#FF7A18"/>
+  <text x="158" y="470" fill="#08111F" font-family="'Trebuchet MS', Helvetica, sans-serif" font-size="28" font-weight="700">Plan. Guard. Route.</text>
+
+  <rect x="384" y="426" width="260" height="72" rx="20" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.18)"/>
+  <text x="418" y="470" fill="#F7FBFF" font-family="'Trebuchet MS', Helvetica, sans-serif" font-size="28" font-weight="700">Remember the workspace</text>
+
+  <g transform="translate(782 112)">
+    <rect width="370" height="452" rx="28" fill="rgba(6,15,28,0.62)" stroke="rgba(255,255,255,0.12)"/>
+    <text x="34" y="52" fill="#FFD9B0" font-family="'Trebuchet MS', Helvetica, sans-serif" font-size="18">MISSION SNAPSHOT</text>
+    <text x="34" y="104" fill="white" font-family="Georgia, 'Times New Roman', serif" font-size="28">prepare the launch plan</text>
+
+    <rect x="34" y="140" width="302" height="64" rx="18" fill="rgba(255,255,255,0.06)"/>
+    <text x="56" y="177" fill="#8FFFE5" font-family="'Trebuchet MS', Helvetica, sans-serif" font-size="20">1  Protect behavior first</text>
+
+    <rect x="34" y="218" width="302" height="64" rx="18" fill="rgba(255,255,255,0.06)"/>
+    <text x="56" y="255" fill="#DDEBFF" font-family="'Trebuchet MS', Helvetica, sans-serif" font-size="20">2  Build a safe execution plan</text>
+
+    <rect x="34" y="296" width="302" height="64" rx="18" fill="rgba(255,255,255,0.06)"/>
+    <text x="56" y="333" fill="#DDEBFF" font-family="'Trebuchet MS', Helvetica, sans-serif" font-size="20">3  Route to GitHub for review</text>
+
+    <path d="M278 392C316 392 340 372 340 339C340 306 316 286 278 286C240 286 216 306 216 339C216 372 240 392 278 392Z" fill="url(#accent)" opacity="0.85"/>
+    <path d="M108 404C144 404 174 376 174 342C174 308 144 280 108 280C72 280 42 308 42 342C42 376 72 404 108 404Z" fill="rgba(0,194,168,0.65)"/>
+    <text x="36" y="430" fill="#FFD9B0" font-family="'Trebuchet MS', Helvetica, sans-serif" font-size="16">terminal • github • slack • telegram</text>
+  </g>
+
+  <text x="122" y="584" fill="#AEC4D9" font-family="'Trebuchet MS', Helvetica, sans-serif" font-size="22">Clean-room inspired by OpenClaw and workspace-native coding agents.</text>
+</svg>

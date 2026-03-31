@@ -56,3 +56,23 @@ test('learn persists workspace learnings', () => {
 
   assert.equal(result.learnings[0].note, 'billing retries use a redis lock');
 });
+
+test('init writes workspace config', () => {
+  const cwd = createTempWorkspace();
+  const control = new MissionControl(cwd);
+  const config = control.init('Payments Core');
+
+  assert.equal(config.workspaceName, 'Payments Core');
+  assert.ok(fs.existsSync(path.join(cwd, '.lobsteros', 'config.json')));
+});
+
+test('report returns markdown mission brief', () => {
+  const cwd = createTempWorkspace();
+  const control = new MissionControl(cwd);
+  control.init('Observability Lab');
+  const result = control.report('prepare the release checklist');
+
+  assert.match(result.markdown, /# Mission Report/);
+  assert.match(result.markdown, /Workspace: Observability Lab/);
+  assert.match(result.markdown, /Available Channels/);
+});
