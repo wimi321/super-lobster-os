@@ -1,0 +1,4 @@
+node_modules/
+.lobsteros/
+coverage/
+.DS_Store

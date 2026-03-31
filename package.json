@@ -1,0 +1,31 @@
+{
+  "name": "super-lobster-os",
+  "version": "0.1.0",
+  "description": "Terminal-first AI operating system that merges channel-native orchestration with workspace-native execution.",
+  "type": "module",
+  "bin": {
+    "lobsteros": "src/cli.mjs"
+  },
+  "scripts": {
+    "start": "node src/cli.mjs",
+    "demo": "node src/cli.mjs demo --message \"audit the payment retry path\"",
+    "doctor": "node src/cli.mjs doctor",
+    "test": "node --test"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "cli",
+    "developer-tools",
+    "workspace",
+    "automation"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wimi321/super-lobster-os.git"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

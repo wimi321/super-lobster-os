@@ -1,0 +1,8 @@
+{
+  "mission": "Own the workspace, not just the chat thread.",
+  "channels": ["terminal", "github", "slack"],
+  "policies": {
+    "destructiveCommands": "deny",
+    "deployments": "review"
+  }
+}
