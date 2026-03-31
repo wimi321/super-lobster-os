@@ -43,6 +43,13 @@
         </g>
       `
 
+      const miniChip = ({ x, y, width, label, fill, textFill }) => `
+        <g>
+          <rect x="${x}" y="${y}" width="${width}" height="28" rx="14" fill="${fill}" />
+          <text x="${x + 14}" y="${y + 19}" fill="${textFill}" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700">${escapeXml(label)}</text>
+        </g>
+      `
+
       const card = ({ x, y, width, height, title, description, accent, dark = false }) => {
         const background = dark ? 'rgba(9, 17, 31, 0.82)' : '#ffffff'
         const stroke = dark ? 'rgba(255,255,255,0.12)' : accent
@@ -61,36 +68,36 @@
       const heroSvg = () => {
         const title = textBlock({
           text: 'A Mission Control Layer for Real Developer Work',
-          font: '64px Georgia, Times New Roman, serif',
-          width: 560,
-          lineHeight: 74,
+          font: '62px Georgia, Times New Roman, serif',
+          width: 540,
+          lineHeight: 70,
           x: 112,
-          y: 216,
+          y: 206,
           fill: '#ffffff',
           fontWeight: 700,
         })
         const subtitle = textBlock({
           text: 'Channel-native orchestration meets workspace-native execution in a cleaner, calmer README layout.',
-          font: '28px Helvetica, Arial, sans-serif',
-          width: 520,
-          lineHeight: 36,
+          font: '27px Helvetica, Arial, sans-serif',
+          width: 500,
+          lineHeight: 34,
           x: 112,
-          y: 398,
+          y: 386,
           fill: '#d8e4f2',
         })
         const panelTitle = textBlock({
           text: 'prepare the launch plan',
-          font: '28px Georgia, Times New Roman, serif',
-          width: 270,
-          lineHeight: 34,
-          x: 792,
-          y: 176,
+          font: '26px Georgia, Times New Roman, serif',
+          width: 280,
+          lineHeight: 32,
+          x: 804,
+          y: 184,
           fill: '#ffffff',
           fontWeight: 700,
         })
-        const step1 = textBlock({ text: '1  Protect behavior first', font: '20px Helvetica, Arial, sans-serif', width: 250, lineHeight: 26, x: 820, y: 258, fill: '#8fffe5', fontWeight: 700 })
-        const step2 = textBlock({ text: '2  Build a safe execution plan', font: '20px Helvetica, Arial, sans-serif', width: 250, lineHeight: 26, x: 820, y: 336, fill: '#dde7f6', fontWeight: 700 })
-        const step3 = textBlock({ text: '3  Route to GitHub for review', font: '20px Helvetica, Arial, sans-serif', width: 250, lineHeight: 26, x: 820, y: 414, fill: '#dde7f6', fontWeight: 700 })
+        const step1 = textBlock({ text: '1  Protect behavior first', font: '19px Helvetica, Arial, sans-serif', width: 264, lineHeight: 24, x: 828, y: 266, fill: '#8fffe5', fontWeight: 700 })
+        const step2 = textBlock({ text: '2  Build a safe execution plan', font: '19px Helvetica, Arial, sans-serif', width: 264, lineHeight: 24, x: 828, y: 348, fill: '#dde7f6', fontWeight: 700 })
+        const step3 = textBlock({ text: '3  Route to GitHub for review', font: '19px Helvetica, Arial, sans-serif', width: 264, lineHeight: 24, x: 828, y: 430, fill: '#dde7f6', fontWeight: 700 })
 
         return `
 <svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -118,23 +125,24 @@
   <text x="138" y="136" fill="#dce8fb" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="1.2">SUPER LOBSTER OS</text>
   ${title}
   ${subtitle}
-  ${pill({ x: 112, y: 494, width: 236, height: 68, fill: '#ff7a18', label: 'Plan. Guard. Route.', labelFill: '#08111f', fontSize: 26 })}
-  ${pill({ x: 366, y: 494, width: 280, height: 68, fill: 'rgba(255,255,255,0.08)', stroke: 'rgba(255,255,255,0.18)', label: 'Remember the workspace', labelFill: '#f7fbff', fontSize: 24 })}
+  ${pill({ x: 112, y: 512, width: 236, height: 64, fill: '#ff7a18', label: 'Plan. Guard. Route.', labelFill: '#08111f', fontSize: 24 })}
+  ${pill({ x: 112, y: 588, width: 272, height: 48, fill: 'rgba(255,255,255,0.08)', stroke: 'rgba(255,255,255,0.18)', label: 'Remember the workspace', labelFill: '#f7fbff', fontSize: 18 })}
   <g>
-    <rect x="764" y="124" width="388" height="472" rx="28" fill="rgba(9,17,31,0.68)" stroke="rgba(255,255,255,0.12)" />
-    <text x="792" y="154" fill="#ffd9b0" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1.2">MISSION SNAPSHOT</text>
+    <rect x="776" y="116" width="364" height="434" rx="28" fill="rgba(9,17,31,0.72)" stroke="rgba(255,255,255,0.12)" />
+    <text x="804" y="148" fill="#ffd9b0" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="1.2">MISSION SNAPSHOT</text>
     ${panelTitle}
-    <rect x="792" y="218" width="304" height="58" rx="16" fill="rgba(255,255,255,0.06)" />
+    <rect x="804" y="226" width="292" height="56" rx="16" fill="rgba(255,255,255,0.06)" />
     ${step1}
-    <rect x="792" y="296" width="304" height="58" rx="16" fill="rgba(255,255,255,0.06)" />
+    <rect x="804" y="308" width="292" height="56" rx="16" fill="rgba(255,255,255,0.06)" />
     ${step2}
-    <rect x="792" y="374" width="304" height="58" rx="16" fill="rgba(255,255,255,0.06)" />
+    <rect x="804" y="390" width="292" height="56" rx="16" fill="rgba(255,255,255,0.06)" />
     ${step3}
-    <text x="792" y="506" fill="#ffd9b0" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700">terminal  •  github  •  slack  •  telegram</text>
-    <circle cx="1062" cy="516" r="52" fill="#ff7a18" opacity="0.88" />
-    <circle cx="944" cy="516" r="36" fill="#00c2a8" opacity="0.72" />
+    ${miniChip({ x: 804, y: 472, width: 76, label: 'terminal', fill: 'rgba(255,255,255,0.08)', textFill: '#ffd9b0' })}
+    ${miniChip({ x: 888, y: 472, width: 70, label: 'github', fill: 'rgba(0,194,168,0.18)', textFill: '#9cf5e8' })}
+    ${miniChip({ x: 966, y: 472, width: 58, label: 'slack', fill: 'rgba(255,122,24,0.20)', textFill: '#ffd9b0' })}
+    ${miniChip({ x: 1032, y: 472, width: 84, label: 'telegram', fill: 'rgba(255,255,255,0.08)', textFill: '#dde7f6' })}
   </g>
-  <text x="112" y="612" fill="#aec4d9" font-family="Helvetica, Arial, sans-serif" font-size="22">Generated with Pretext-powered text layout instead of hand-placed text nodes.</text>
+  <text x="112" y="676" fill="#aec4d9" font-family="Helvetica, Arial, sans-serif" font-size="20">Generated with Pretext-powered text layout instead of hand-placed text nodes.</text>
 </svg>`
       }
 
@@ -159,7 +167,7 @@
           fill: '#475569',
         })
         return `
-<svg width="1200" height="560" viewBox="0 0 1200 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="mapBg" x1="108" y1="58" x2="1080" y2="488" gradientUnits="userSpaceOnUse">
       <stop stop-color="#fff7ed" />
@@ -170,15 +178,14 @@
       <stop offset="1" stop-color="#0f766e" />
     </linearGradient>
   </defs>
-  <rect width="1200" height="560" rx="28" fill="url(#mapBg)" />
+  <rect width="1200" height="760" rx="28" fill="url(#mapBg)" />
   ${headline}
   ${deck}
-  <line x1="186" y1="286" x2="1018" y2="286" stroke="url(#connector)" stroke-width="10" stroke-linecap="round" />
-  ${card({ x: 76, y: 190, width: 224, height: 194, title: 'Mission', description: 'User goal, repository state, team memory, and constraints.', accent: '#fdba74', dark: true })}
-  ${card({ x: 340, y: 158, width: 224, height: 226, title: 'Plan', description: 'Turns prompts into sequenced steps grounded in the current workspace.', accent: '#c2410c' })}
-  ${card({ x: 604, y: 158, width: 224, height: 226, title: 'Guard', description: 'Scores commands as allow, review, or deny before execution.', accent: '#1d4ed8' })}
-  ${card({ x: 868, y: 158, width: 256, height: 226, title: 'Route + Remember', description: 'Chooses terminal, GitHub, Slack, or mobile surfaces and stores durable learning.', accent: '#0f766e' })}
-  <text x="78" y="478" fill="#64748b" font-family="Helvetica, Arial, sans-serif" font-size="18">Current alpha: config init, mission planning, command safety, report export, channel routing, and persistent workspace memory.</text>
+  ${card({ x: 76, y: 214, width: 472, height: 210, title: 'Mission', description: 'User goal, repository state, team memory, and constraints.', accent: '#fdba74', dark: true })}
+  ${card({ x: 624, y: 214, width: 500, height: 210, title: 'Plan', description: 'Turns prompts into sequenced steps grounded in the current workspace.', accent: '#c2410c' })}
+  ${card({ x: 76, y: 468, width: 472, height: 210, title: 'Guard', description: 'Scores commands as allow, review, or deny before execution.', accent: '#1d4ed8' })}
+  ${card({ x: 624, y: 468, width: 500, height: 210, title: 'Route + Remember', description: 'Chooses terminal, GitHub, Slack, or mobile surfaces and stores durable learning.', accent: '#0f766e' })}
+  <text x="78" y="722" fill="#64748b" font-family="Helvetica, Arial, sans-serif" font-size="18">Current alpha: config init, mission planning, command safety, report export, channel routing, and persistent workspace memory.</text>
 </svg>`
       }
 

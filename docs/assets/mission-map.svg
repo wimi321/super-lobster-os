@@ -1,5 +1,5 @@
 
-<svg width="1200" height="560" viewBox="0 0 1200 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="mapBg" x1="108" y1="58" x2="1080" y2="488" gradientUnits="userSpaceOnUse">
       <stop stop-color="#fff7ed" />
@@ -10,41 +10,40 @@
       <stop offset="1" stop-color="#0f766e" />
     </linearGradient>
   </defs>
-  <rect width="1200" height="560" rx="28" fill="url(#mapBg)" />
+  <rect width="1200" height="760" rx="28" fill="url(#mapBg)" />
   <text x="76" y="84" fill="#172033" font-family="Georgia, Times New Roman, serif" font-size="44" font-weight="700" letter-spacing="0">Super Lobster OS Mission Flow</text>
   <text x="76" y="132" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="400" letter-spacing="0">A workspace operating layer that decides what to do, where to do it, and how safely </text><text x="76" y="160" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="400" letter-spacing="0">to do it.</text>
-  <line x1="186" y1="286" x2="1018" y2="286" stroke="url(#connector)" stroke-width="10" stroke-linecap="round" />
   
           <g>
-            <rect x="76" y="190" width="224" height="194" rx="24" fill="rgba(9, 17, 31, 0.82)" stroke="rgba(255,255,255,0.12)" />
-            <text x="104" y="232" fill="#fdba74" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700">MISSION</text>
-            <text x="104" y="274" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="28" font-weight="700" letter-spacing="0">Mission</text>
-            <text x="104" y="342" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">User goal, repository </text><text x="104" y="366" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">state, team memory, </text><text x="104" y="390" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">and constraints.</text>
+            <rect x="76" y="214" width="472" height="210" rx="24" fill="rgba(9, 17, 31, 0.82)" stroke="rgba(255,255,255,0.12)" />
+            <text x="104" y="256" fill="#fdba74" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700">MISSION</text>
+            <text x="104" y="298" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="28" font-weight="700" letter-spacing="0">Mission</text>
+            <text x="104" y="366" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">User goal, repository state, team memory, and </text><text x="104" y="390" fill="#cbd5e1" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">constraints.</text>
           </g>
         
   
           <g>
-            <rect x="340" y="158" width="224" height="226" rx="24" fill="#ffffff" stroke="#c2410c" />
-            <text x="368" y="200" fill="#c2410c" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700">PLAN</text>
-            <text x="368" y="242" fill="#172033" font-family="Georgia, Times New Roman, serif" font-size="28" font-weight="700" letter-spacing="0">Plan</text>
-            <text x="368" y="310" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">Turns prompts into </text><text x="368" y="334" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">sequenced steps </text><text x="368" y="358" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">grounded in the </text><text x="368" y="382" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">current workspace.</text>
+            <rect x="624" y="214" width="500" height="210" rx="24" fill="#ffffff" stroke="#c2410c" />
+            <text x="652" y="256" fill="#c2410c" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700">PLAN</text>
+            <text x="652" y="298" fill="#172033" font-family="Georgia, Times New Roman, serif" font-size="28" font-weight="700" letter-spacing="0">Plan</text>
+            <text x="652" y="366" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">Turns prompts into sequenced steps grounded in the </text><text x="652" y="390" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">current workspace.</text>
           </g>
         
   
           <g>
-            <rect x="604" y="158" width="224" height="226" rx="24" fill="#ffffff" stroke="#1d4ed8" />
-            <text x="632" y="200" fill="#1d4ed8" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700">GUARD</text>
-            <text x="632" y="242" fill="#172033" font-family="Georgia, Times New Roman, serif" font-size="28" font-weight="700" letter-spacing="0">Guard</text>
-            <text x="632" y="310" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">Scores commands </text><text x="632" y="334" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">as allow, review, or </text><text x="632" y="358" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">deny before </text><text x="632" y="382" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">execution.</text>
+            <rect x="76" y="468" width="472" height="210" rx="24" fill="#ffffff" stroke="#1d4ed8" />
+            <text x="104" y="510" fill="#1d4ed8" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700">GUARD</text>
+            <text x="104" y="552" fill="#172033" font-family="Georgia, Times New Roman, serif" font-size="28" font-weight="700" letter-spacing="0">Guard</text>
+            <text x="104" y="620" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">Scores commands as allow, review, or deny before </text><text x="104" y="644" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">execution.</text>
           </g>
         
   
           <g>
-            <rect x="868" y="158" width="256" height="226" rx="24" fill="#ffffff" stroke="#0f766e" />
-            <text x="896" y="200" fill="#0f766e" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700">ROUTE + REMEMBER</text>
-            <text x="896" y="242" fill="#172033" font-family="Georgia, Times New Roman, serif" font-size="28" font-weight="700" letter-spacing="0">Route + </text><text x="896" y="276" fill="#172033" font-family="Georgia, Times New Roman, serif" font-size="28" font-weight="700" letter-spacing="0">Remember</text>
-            <text x="896" y="310" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">Chooses terminal, </text><text x="896" y="334" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">GitHub, Slack, or mobile </text><text x="896" y="358" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">surfaces and stores </text><text x="896" y="382" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">durable learning.</text>
+            <rect x="624" y="468" width="500" height="210" rx="24" fill="#ffffff" stroke="#0f766e" />
+            <text x="652" y="510" fill="#0f766e" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700">ROUTE + REMEMBER</text>
+            <text x="652" y="552" fill="#172033" font-family="Georgia, Times New Roman, serif" font-size="28" font-weight="700" letter-spacing="0">Route + Remember</text>
+            <text x="652" y="620" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">Chooses terminal, GitHub, Slack, or mobile surfaces </text><text x="652" y="644" fill="#475569" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="400" letter-spacing="0">and stores durable learning.</text>
           </g>
         
-  <text x="78" y="478" fill="#64748b" font-family="Helvetica, Arial, sans-serif" font-size="18">Current alpha: config init, mission planning, command safety, report export, channel routing, and persistent workspace memory.</text>
+  <text x="78" y="722" fill="#64748b" font-family="Helvetica, Arial, sans-serif" font-size="18">Current alpha: config init, mission planning, command safety, report export, channel routing, and persistent workspace memory.</text>
 </svg>
