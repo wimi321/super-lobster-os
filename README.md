@@ -14,6 +14,14 @@
 </p>
 
 <p align="center">
+  <strong>English</strong>
+  ·
+  <a href="./README.zh-CN.md">简体中文</a>
+  ·
+  <a href="./README.ja.md">日本語</a>
+</p>
+
+<p align="center">
   <a href="https://github.com/wimi321/super-lobster-os/actions/workflows/ci.yml"><img alt="CI" src="https://img.shields.io/github/actions/workflow/status/wimi321/super-lobster-os/ci.yml?style=for-the-badge&label=CI"></a>
   <a href="./LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/license-MIT-0f172a?style=for-the-badge"></a>
   <img alt="Node 20+" src="https://img.shields.io/badge/node-20%2B-0f766e?style=for-the-badge">
