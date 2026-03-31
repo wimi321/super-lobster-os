@@ -1,25 +1,27 @@
 
 <svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="heroBg" x1="88" y1="44" x2="1192" y2="664" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#08111f" />
-      <stop offset="0.54" stop-color="#102746" />
-      <stop offset="1" stop-color="#164e63" />
-    </linearGradient>
-    <linearGradient id="heroCard" x1="84" y1="76" x2="1192" y2="620" gradientUnits="userSpaceOnUse">
-      <stop stop-color="rgba(255,255,255,0.18)" />
-      <stop offset="1" stop-color="rgba(255,255,255,0.05)" />
-    </linearGradient>
-    <filter id="heroBlur" x="0" y="0" width="1280" height="720" filterUnits="userSpaceOnUse">
-      <feGaussianBlur stdDeviation="56" />
-    </filter>
-  </defs>
-  <rect width="1280" height="720" rx="32" fill="url(#heroBg)" />
-  <g opacity="0.28" filter="url(#heroBlur)">
-    <circle cx="1002" cy="144" r="154" fill="#ff7a18" />
-    <circle cx="214" cy="618" r="170" fill="#00c2a8" />
-  </g>
-  <rect x="76" y="76" width="1128" height="568" rx="28" fill="url(#heroCard)" stroke="rgba(255,255,255,0.18)" />
+  
+        <defs>
+          <linearGradient id="posterBg" x1="80" y1="40" x2="1216" y2="666" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#08111f" />
+            <stop offset="0.52" stop-color="#102746" />
+            <stop offset="1" stop-color="#0f766e" />
+          </linearGradient>
+          <linearGradient id="posterGlass" x1="76" y1="76" x2="1204" y2="644" gradientUnits="userSpaceOnUse">
+            <stop stop-color="rgba(255,255,255,0.18)" />
+            <stop offset="1" stop-color="rgba(255,255,255,0.05)" />
+          </linearGradient>
+          <filter id="posterBlur" x="0" y="0" width="1280" height="720" filterUnits="userSpaceOnUse">
+            <feGaussianBlur stdDeviation="56" />
+          </filter>
+        </defs>
+        <rect width="1280" height="720" rx="32" fill="url(#posterBg)" />
+        <g opacity="0.24" filter="url(#posterBlur)">
+          <circle cx="1040" cy="134" r="160" fill="#ff7a18" />
+          <circle cx="186" cy="624" r="176" fill="#00c2a8" />
+        </g>
+        <rect x="76" y="76" width="1128" height="568" rx="28" fill="url(#posterGlass)" stroke="rgba(255,255,255,0.18)" />
+      
   <rect x="112" y="112" width="182" height="36" rx="18" fill="rgba(255,255,255,0.10)" />
   <text x="138" y="136" fill="#dce8fb" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="1.2">SUPER LOBSTER OS</text>
   <text x="112" y="206" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="62" font-weight="700" letter-spacing="0">A Mission Control </text><text x="112" y="276" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="62" font-weight="700" letter-spacing="0">Layer for Real </text><text x="112" y="346" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="62" font-weight="700" letter-spacing="0">Developer Work</text>

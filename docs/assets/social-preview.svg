@@ -1,0 +1,74 @@
+
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  
+        <defs>
+          <linearGradient id="posterBg" x1="80" y1="40" x2="1216" y2="586" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#08111f" />
+            <stop offset="0.52" stop-color="#102746" />
+            <stop offset="1" stop-color="#0f766e" />
+          </linearGradient>
+          <linearGradient id="posterGlass" x1="54" y1="54" x2="1226" y2="586" gradientUnits="userSpaceOnUse">
+            <stop stop-color="rgba(255,255,255,0.18)" />
+            <stop offset="1" stop-color="rgba(255,255,255,0.05)" />
+          </linearGradient>
+          <filter id="posterBlur" x="0" y="0" width="1280" height="640" filterUnits="userSpaceOnUse">
+            <feGaussianBlur stdDeviation="56" />
+          </filter>
+        </defs>
+        <rect width="1280" height="640" rx="32" fill="url(#posterBg)" />
+        <g opacity="0.24" filter="url(#posterBlur)">
+          <circle cx="1040" cy="134" r="160" fill="#ff7a18" />
+          <circle cx="186" cy="544" r="176" fill="#00c2a8" />
+        </g>
+        <rect x="54" y="54" width="1172" height="532" rx="28" fill="url(#posterGlass)" stroke="rgba(255,255,255,0.18)" />
+      
+  <rect x="100" y="98" width="206" height="38" rx="19" fill="rgba(255,255,255,0.10)" />
+  <text x="126" y="123" fill="#dce8fb" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1.2">SUPER LOBSTER OS</text>
+  <text x="96" y="176" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="74" font-weight="700" letter-spacing="0">The AI Operating </text><text x="96" y="258" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="74" font-weight="700" letter-spacing="0">Layer for Real </text><text x="96" y="340" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="74" font-weight="700" letter-spacing="0">Developer Missions</text>
+  <text x="100" y="432" fill="#d8e4f2" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="400" letter-spacing="0">Channel-native orchestration. Workspace-native </text><text x="100" y="470" fill="#d8e4f2" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="400" letter-spacing="0">execution. Public, forkable, clean-room </text><text x="100" y="508" fill="#d8e4f2" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="400" letter-spacing="0">engineering.</text>
+  
+        <g>
+          <rect x="100" y="500" width="240" height="66" rx="33" fill="#ff7a18" stroke="none" />
+          <text x="126" y="541" fill="#08111f" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700">Plan. Guard. Route.</text>
+        </g>
+      
+  
+        <g>
+          <rect x="358" y="500" width="300" height="66" rx="33" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)" />
+          <text x="384" y="540.3333333333334" fill="#f7fbff" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700">Remember the workspace</text>
+        </g>
+      
+  <g>
+    <rect x="808" y="94" width="346" height="452" rx="28" fill="rgba(9,17,31,0.72)" stroke="rgba(255,255,255,0.12)" />
+    <text x="838" y="128" fill="#ffd9b0" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="1.2">POSTER STATE</text>
+    <text x="838" y="188" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="36" font-weight="700">Mission clarity</text>
+    <text x="838" y="230" fill="#d8e4f2" font-family="Helvetica, Arial, sans-serif" font-size="22">A calmer, sharper interface for work that spans terminal, GitHub, Slack, and memory.</text>
+    
+        <g>
+          <rect x="838" y="316" width="82" height="28" rx="14" fill="rgba(255,255,255,0.08)" />
+          <text x="852" y="335" fill="#ffd9b0" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700">terminal</text>
+        </g>
+      
+    
+        <g>
+          <rect x="930" y="316" width="72" height="28" rx="14" fill="rgba(0,194,168,0.18)" />
+          <text x="944" y="335" fill="#9cf5e8" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700">github</text>
+        </g>
+      
+    
+        <g>
+          <rect x="1012" y="316" width="60" height="28" rx="14" fill="rgba(255,122,24,0.20)" />
+          <text x="1026" y="335" fill="#ffd9b0" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700">slack</text>
+        </g>
+      
+    
+        <g>
+          <rect x="1082" y="316" width="60" height="28" rx="14" fill="rgba(255,255,255,0.08)" />
+          <text x="1096" y="335" fill="#dde7f6" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700">memory</text>
+        </g>
+      
+    <rect x="838" y="372" width="274" height="88" rx="22" fill="rgba(255,255,255,0.06)" />
+    <text x="864" y="412" fill="#8fffe5" font-family="Helvetica, Arial, sans-serif" font-size="20" font-weight="700">workspace-aware planning</text>
+    <text x="864" y="440" fill="#dde7f6" font-family="Helvetica, Arial, sans-serif" font-size="18">visual system generated with Pretext + Playwright</text>
+  </g>
+</svg>

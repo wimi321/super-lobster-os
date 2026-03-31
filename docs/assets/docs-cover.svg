@@ -1,0 +1,71 @@
+
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  
+        <defs>
+          <linearGradient id="posterBg" x1="80" y1="40" x2="1536" y2="846" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#08111f" />
+            <stop offset="0.52" stop-color="#102746" />
+            <stop offset="1" stop-color="#0f766e" />
+          </linearGradient>
+          <linearGradient id="posterGlass" x1="86" y1="86" x2="1514" y2="814" gradientUnits="userSpaceOnUse">
+            <stop stop-color="rgba(255,255,255,0.18)" />
+            <stop offset="1" stop-color="rgba(255,255,255,0.05)" />
+          </linearGradient>
+          <filter id="posterBlur" x="0" y="0" width="1600" height="900" filterUnits="userSpaceOnUse">
+            <feGaussianBlur stdDeviation="56" />
+          </filter>
+        </defs>
+        <rect width="1600" height="900" rx="32" fill="url(#posterBg)" />
+        <g opacity="0.24" filter="url(#posterBlur)">
+          <circle cx="1360" cy="134" r="160" fill="#ff7a18" />
+          <circle cx="186" cy="804" r="176" fill="#00c2a8" />
+        </g>
+        <rect x="86" y="86" width="1428" height="728" rx="28" fill="url(#posterGlass)" stroke="rgba(255,255,255,0.18)" />
+      
+  <rect x="100" y="106" width="182" height="36" rx="18" fill="rgba(255,255,255,0.10)" />
+  <text x="126" y="131" fill="#dce8fb" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="1.2">DOCS COVER</text>
+  <text x="96" y="184" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="64" font-weight="700" letter-spacing="0">Documentation that feels </text><text x="96" y="256" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="64" font-weight="700" letter-spacing="0">like part of the product</text>
+  <text x="100" y="388" fill="#d8e4f2" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="400" letter-spacing="0">Architecture, roadmap, and comparison pages should look </text><text x="100" y="424" fill="#d8e4f2" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="400" letter-spacing="0">like they belong to the same system.</text>
+  
+        <g>
+          <rect x="100" y="520" width="224" height="66" rx="33" fill="#ff7a18" stroke="none" />
+          <text x="126" y="561" fill="#08111f" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700">Architecture</text>
+        </g>
+      
+  
+        <g>
+          <rect x="344" y="520" width="196" height="66" rx="33" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)" />
+          <text x="370" y="561" fill="#f7fbff" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700">Roadmap</text>
+        </g>
+      
+  
+        <g>
+          <rect x="560" y="520" width="220" height="66" rx="33" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)" />
+          <text x="586" y="561" fill="#f7fbff" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700">Comparison</text>
+        </g>
+      
+  <g>
+    <rect x="1048" y="132" width="366" height="574" rx="30" fill="rgba(9,17,31,0.72)" stroke="rgba(255,255,255,0.12)" />
+    <text x="1082" y="172" fill="#ffd9b0" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="1.2">BRAND SYSTEM</text>
+    <text x="1082" y="244" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="38" font-weight="700">Calm, sharp, legible</text>
+    <text x="1082" y="292" fill="#d8e4f2" font-family="Helvetica, Arial, sans-serif" font-size="22">The same visual language spans README, docs, preview cards, and future landing pages.</text>
+    
+        <g>
+          <rect x="1082" y="362" width="78" height="28" rx="14" fill="rgba(255,255,255,0.08)" />
+          <text x="1096" y="381" fill="#ffd9b0" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700">clarity</text>
+        </g>
+      
+    
+        <g>
+          <rect x="1172" y="362" width="94" height="28" rx="14" fill="rgba(0,194,168,0.18)" />
+          <text x="1186" y="381" fill="#9cf5e8" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700">structure</text>
+        </g>
+      
+    
+        <g>
+          <rect x="1278" y="362" width="78" height="28" rx="14" fill="rgba(255,122,24,0.20)" />
+          <text x="1292" y="381" fill="#ffd9b0" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700">signal</text>
+        </g>
+      
+  </g>
+</svg>

@@ -1,0 +1,75 @@
+
+<svg width="1440" height="820" viewBox="0 0 1440 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  
+        <defs>
+          <linearGradient id="posterBg" x1="80" y1="40" x2="1376" y2="766" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#08111f" />
+            <stop offset="0.52" stop-color="#102746" />
+            <stop offset="1" stop-color="#0f766e" />
+          </linearGradient>
+          <linearGradient id="posterGlass" x1="72" y1="72" x2="1368" y2="748" gradientUnits="userSpaceOnUse">
+            <stop stop-color="rgba(255,255,255,0.18)" />
+            <stop offset="1" stop-color="rgba(255,255,255,0.05)" />
+          </linearGradient>
+          <filter id="posterBlur" x="0" y="0" width="1440" height="820" filterUnits="userSpaceOnUse">
+            <feGaussianBlur stdDeviation="56" />
+          </filter>
+        </defs>
+        <rect width="1440" height="820" rx="32" fill="url(#posterBg)" />
+        <g opacity="0.24" filter="url(#posterBlur)">
+          <circle cx="1200" cy="134" r="160" fill="#ff7a18" />
+          <circle cx="186" cy="724" r="176" fill="#00c2a8" />
+        </g>
+        <rect x="72" y="72" width="1296" height="676" rx="28" fill="url(#posterGlass)" stroke="rgba(255,255,255,0.18)" />
+      
+  <rect x="112" y="108" width="206" height="38" rx="19" fill="rgba(255,255,255,0.10)" />
+  <text x="138" y="133" fill="#dce8fb" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1.2">SUPER LOBSTER OS</text>
+  <text x="112" y="214" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="78" font-weight="700" letter-spacing="0">Own the mission, </text><text x="112" y="300" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="78" font-weight="700" letter-spacing="0">not just the </text><text x="112" y="386" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="78" font-weight="700" letter-spacing="0">prompt.</text>
+  <text x="112" y="438" fill="#d8e4f2" font-family="Helvetica, Arial, sans-serif" font-size="31" font-weight="400" letter-spacing="0">Super Lobster OS brings mission planning, </text><text x="112" y="478" fill="#d8e4f2" font-family="Helvetica, Arial, sans-serif" font-size="31" font-weight="400" letter-spacing="0">safety policy, routing, and persistent workspace </text><text x="112" y="518" fill="#d8e4f2" font-family="Helvetica, Arial, sans-serif" font-size="31" font-weight="400" letter-spacing="0">memory into one operator-grade layer.</text>
+  
+        <g>
+          <rect x="112" y="584" width="258" height="70" rx="35" fill="#ff7a18" stroke="none" />
+          <text x="138" y="627.6666666666666" fill="#08111f" font-family="Helvetica, Arial, sans-serif" font-size="26" font-weight="700">Explore the runtime</text>
+        </g>
+      
+  
+        <g>
+          <rect x="390" y="584" width="244" height="70" rx="35" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)" />
+          <text x="416" y="627" fill="#f7fbff" font-family="Helvetica, Arial, sans-serif" font-size="24" font-weight="700">Read the docs</text>
+        </g>
+      
+  <g>
+    <rect x="890" y="116" width="390" height="516" rx="30" fill="rgba(9,17,31,0.72)" stroke="rgba(255,255,255,0.12)" />
+    <text x="924" y="154" fill="#ffd9b0" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="1.2">OPERATOR PANEL</text>
+    <text x="924" y="222" fill="#ffffff" font-family="Georgia, Times New Roman, serif" font-size="38" font-weight="700">Route work with intent</text>
+    <text x="924" y="266" fill="#d8e4f2" font-family="Helvetica, Arial, sans-serif" font-size="22">From repo context to execution surface, the system stays legible and safety-aware.</text>
+    
+        <g>
+          <rect x="924" y="330" width="90" height="28" rx="14" fill="rgba(255,255,255,0.08)" />
+          <text x="938" y="349" fill="#ffd9b0" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700">terminal</text>
+        </g>
+      
+    
+        <g>
+          <rect x="1022" y="330" width="80" height="28" rx="14" fill="rgba(0,194,168,0.18)" />
+          <text x="1036" y="349" fill="#9cf5e8" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700">github</text>
+        </g>
+      
+    
+        <g>
+          <rect x="1110" y="330" width="68" height="28" rx="14" fill="rgba(255,122,24,0.20)" />
+          <text x="1124" y="349" fill="#ffd9b0" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700">slack</text>
+        </g>
+      
+    
+        <g>
+          <rect x="1186" y="330" width="76" height="28" rx="14" fill="rgba(255,255,255,0.08)" />
+          <text x="1200" y="349" fill="#dde7f6" font-family="Helvetica, Arial, sans-serif" font-size="13" font-weight="700">memory</text>
+        </g>
+      
+    <rect x="924" y="388" width="312" height="72" rx="20" fill="rgba(255,255,255,0.06)" />
+    <text x="952" y="430" fill="#8fffe5" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700">Planning that looks authored</text>
+    <rect x="924" y="478" width="312" height="72" rx="20" fill="rgba(255,255,255,0.06)" />
+    <text x="952" y="520" fill="#dde7f6" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700">Safety that feels explicit</text>
+  </g>
+</svg>

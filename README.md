@@ -147,6 +147,16 @@ node src/cli.mjs doctor
 
 Deep dive: [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md)
 
+## Brand Kit
+
+The project now ships a unified visual system for GitHub and future marketing surfaces:
+
+- [Social Preview PNG](./docs/assets/social-preview.png)
+- [Social Preview SVG](./docs/assets/social-preview.svg)
+- [Website Hero](./docs/assets/website-hero.svg)
+- [Docs Cover](./docs/assets/docs-cover.svg)
+- [Brand System Notes](./docs/BRAND.md)
+
 ## Command Surface
 
 | Command | Purpose |

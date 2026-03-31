@@ -15,11 +15,16 @@ Super Lobster OS documentation is organized to support both quick discovery and 
 - [Architecture](./ARCHITECTURE.md)
 - [Comparison](./COMPARISON.md)
 - [Roadmap](./ROADMAP.md)
+- [Brand System](./BRAND.md)
 
 ## Visual Assets
 
 - [Hero Graphic](./assets/lobster-hero.svg)
 - [Mission Map](./assets/mission-map.svg)
+- [Social Preview SVG](./assets/social-preview.svg)
+- [Social Preview PNG](./assets/social-preview.png)
+- [Website Hero](./assets/website-hero.svg)
+- [Docs Cover](./assets/docs-cover.svg)
 
 These SVGs are generated from a browser-side layout pipeline using [`@chenglou/pretext`](https://github.com/chenglou/pretext), so README typography can be regenerated instead of hand-positioned.
 

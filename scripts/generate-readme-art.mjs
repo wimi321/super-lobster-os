@@ -6,6 +6,10 @@ import { chromium } from 'playwright'
 const root = process.cwd()
 const heroPath = path.join(root, 'docs', 'assets', 'lobster-hero.svg')
 const mapPath = path.join(root, 'docs', 'assets', 'mission-map.svg')
+const socialSvgPath = path.join(root, 'docs', 'assets', 'social-preview.svg')
+const socialPngPath = path.join(root, 'docs', 'assets', 'social-preview.png')
+const websiteHeroPath = path.join(root, 'docs', 'assets', 'website-hero.svg')
+const docsCoverPath = path.join(root, 'docs', 'assets', 'docs-cover.svg')
 
 const server = http.createServer((request, response) => {
   const requestedPath = request.url === '/' ? '/scripts/readme-art.template.html' : request.url
@@ -52,5 +56,14 @@ server.close()
 
 fs.writeFileSync(heroPath, `${result.hero}\n`, 'utf8')
 fs.writeFileSync(mapPath, `${result.missionMap}\n`, 'utf8')
+fs.writeFileSync(socialSvgPath, `${result.socialPreview}\n`, 'utf8')
+fs.writeFileSync(websiteHeroPath, `${result.websiteHero}\n`, 'utf8')
+fs.writeFileSync(docsCoverPath, `${result.docsCover}\n`, 'utf8')
 
-console.log(`Generated ${path.relative(root, heroPath)} and ${path.relative(root, mapPath)}`)
+const pngBrowser = await chromium.launch({ headless: true })
+const pngPage = await pngBrowser.newPage({ viewport: { width: 1280, height: 640 }, deviceScaleFactor: 1 })
+await pngPage.setContent(`<body style="margin:0;background:#08111f;">${result.socialPreview}</body>`)
+await pngPage.screenshot({ path: socialPngPath })
+await pngBrowser.close()
+
+console.log(`Generated ${path.relative(root, heroPath)}, ${path.relative(root, mapPath)}, ${path.relative(root, socialSvgPath)}, ${path.relative(root, socialPngPath)}, ${path.relative(root, websiteHeroPath)}, and ${path.relative(root, docsCoverPath)}`)
