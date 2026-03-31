@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./docs/assets/lobster-hero.svg" alt="Super Lobster OS 视觉头图" width="100%">
+  <img src="./docs/assets/lobster-hero.svg" alt="Super Lobster OS 视觉头图" width="960">
 </div>
 
 <h1 align="center">Super Lobster OS</h1>
@@ -117,7 +117,7 @@ node src/cli.mjs doctor
 ## 架构
 
 <div align="center">
-  <img src="./docs/assets/mission-map.svg" alt="Super Lobster OS 架构图" width="100%">
+  <img src="./docs/assets/mission-map.svg" alt="Super Lobster OS 架构图" width="920">
 </div>
 
 ### 核心模块

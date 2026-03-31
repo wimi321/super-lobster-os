@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Super Lobster OS Art Generator</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      body {
+        margin: 0;
+        background: #08111f;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module">
+      import { prepareWithSegments, layoutWithLines } from '../node_modules/@chenglou/pretext/dist/layout.js'
+
+      const escapeXml = (value) => value
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&apos;')
+
+      const fontFamilyFromShorthand = (font) => font.split(' ').slice(1).join(' ')
+      const fontSizeFromShorthand = (font) => font.match(/(\d+)px/)[1]
+
+      const textBlock = ({ text, font, width, lineHeight, x, y, fill, letterSpacing = 0, fontWeight = 400 }) => {
+        const prepared = prepareWithSegments(text, font)
+        const { lines } = layoutWithLines(prepared, width, lineHeight)
+        return lines.map((line, index) => {
+          const baseline = y + (index * lineHeight)
+          return `<text x="${x}" y="${baseline}" fill="${fill}" font-family="${fontFamilyFromShorthand(font)}" font-size="${fontSizeFromShorthand(font)}" font-weight="${fontWeight}" letter-spacing="${letterSpacing}">${escapeXml(line.text)}</text>`
+        }).join('')
+      }
+
+      const pill = ({ x, y, width, height, fill, stroke = 'none', label, labelFill, fontSize = 24 }) => `
+        <g>
+          <rect x="${x}" y="${y}" width="${width}" height="${height}" rx="${height / 2}" fill="${fill}" stroke="${stroke}" />
+          <text x="${x + 26}" y="${y + height / 2 + fontSize / 3}" fill="${labelFill}" font-family="Helvetica, Arial, sans-serif" font-size="${fontSize}" font-weight="700">${escapeXml(label)}</text>
+        </g>
+      `
+
+      const card = ({ x, y, width, height, title, description, accent, dark = false }) => {
+        const background = dark ? 'rgba(9, 17, 31, 0.82)' : '#ffffff'
+        const stroke = dark ? 'rgba(255,255,255,0.12)' : accent
+        const titleFill = dark ? '#ffffff' : '#172033'
+        const bodyFill = dark ? '#cbd5e1' : '#475569'
+        return `
+          <g>
+            <rect x="${x}" y="${y}" width="${width}" height="${height}" rx="24" fill="${background}" stroke="${stroke}" />
+            <text x="${x + 28}" y="${y + 42}" fill="${accent}" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700">${escapeXml(title.toUpperCase())}</text>
+            ${textBlock({ text: title, font: '28px Georgia, Times New Roman, serif', width: width - 56, lineHeight: 34, x: x + 28, y: y + 84, fill: titleFill, fontWeight: 700 })}
+            ${textBlock({ text: description, font: '18px Helvetica, Arial, sans-serif', width: width - 56, lineHeight: 24, x: x + 28, y: y + 152, fill: bodyFill })}
+          </g>
+        `
+      }
+
+      const heroSvg = () => {
+        const title = textBlock({
+          text: 'A Mission Control Layer for Real Developer Work',
+          font: '64px Georgia, Times New Roman, serif',
+          width: 560,
+          lineHeight: 74,
+          x: 112,
+          y: 216,
+          fill: '#ffffff',
+          fontWeight: 700,
+        })
+        const subtitle = textBlock({
+          text: 'Channel-native orchestration meets workspace-native execution in a cleaner, calmer README layout.',
+          font: '28px Helvetica, Arial, sans-serif',
+          width: 520,
+          lineHeight: 36,
+          x: 112,
+          y: 398,
+          fill: '#d8e4f2',
+        })
+        const panelTitle = textBlock({
+          text: 'prepare the launch plan',
+          font: '28px Georgia, Times New Roman, serif',
+          width: 270,
+          lineHeight: 34,
+          x: 792,
+          y: 176,
+          fill: '#ffffff',
+          fontWeight: 700,
+        })
+        const step1 = textBlock({ text: '1  Protect behavior first', font: '20px Helvetica, Arial, sans-serif', width: 250, lineHeight: 26, x: 820, y: 258, fill: '#8fffe5', fontWeight: 700 })
+        const step2 = textBlock({ text: '2  Build a safe execution plan', font: '20px Helvetica, Arial, sans-serif', width: 250, lineHeight: 26, x: 820, y: 336, fill: '#dde7f6', fontWeight: 700 })
+        const step3 = textBlock({ text: '3  Route to GitHub for review', font: '20px Helvetica, Arial, sans-serif', width: 250, lineHeight: 26, x: 820, y: 414, fill: '#dde7f6', fontWeight: 700 })
+
+        return `
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heroBg" x1="88" y1="44" x2="1192" y2="664" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08111f" />
+      <stop offset="0.54" stop-color="#102746" />
+      <stop offset="1" stop-color="#164e63" />
+    </linearGradient>
+    <linearGradient id="heroCard" x1="84" y1="76" x2="1192" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="rgba(255,255,255,0.18)" />
+      <stop offset="1" stop-color="rgba(255,255,255,0.05)" />
+    </linearGradient>
+    <filter id="heroBlur" x="0" y="0" width="1280" height="720" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="56" />
+    </filter>
+  </defs>
+  <rect width="1280" height="720" rx="32" fill="url(#heroBg)" />
+  <g opacity="0.28" filter="url(#heroBlur)">
+    <circle cx="1002" cy="144" r="154" fill="#ff7a18" />
+    <circle cx="214" cy="618" r="170" fill="#00c2a8" />
+  </g>
+  <rect x="76" y="76" width="1128" height="568" rx="28" fill="url(#heroCard)" stroke="rgba(255,255,255,0.18)" />
+  <rect x="112" y="112" width="182" height="36" rx="18" fill="rgba(255,255,255,0.10)" />
+  <text x="138" y="136" fill="#dce8fb" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="1.2">SUPER LOBSTER OS</text>
+  ${title}
+  ${subtitle}
+  ${pill({ x: 112, y: 494, width: 236, height: 68, fill: '#ff7a18', label: 'Plan. Guard. Route.', labelFill: '#08111f', fontSize: 26 })}
+  ${pill({ x: 366, y: 494, width: 280, height: 68, fill: 'rgba(255,255,255,0.08)', stroke: 'rgba(255,255,255,0.18)', label: 'Remember the workspace', labelFill: '#f7fbff', fontSize: 24 })}
+  <g>
+    <rect x="764" y="124" width="388" height="472" rx="28" fill="rgba(9,17,31,0.68)" stroke="rgba(255,255,255,0.12)" />
+    <text x="792" y="154" fill="#ffd9b0" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1.2">MISSION SNAPSHOT</text>
+    ${panelTitle}
+    <rect x="792" y="218" width="304" height="58" rx="16" fill="rgba(255,255,255,0.06)" />
+    ${step1}
+    <rect x="792" y="296" width="304" height="58" rx="16" fill="rgba(255,255,255,0.06)" />
+    ${step2}
+    <rect x="792" y="374" width="304" height="58" rx="16" fill="rgba(255,255,255,0.06)" />
+    ${step3}
+    <text x="792" y="506" fill="#ffd9b0" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="700">terminal  •  github  •  slack  •  telegram</text>
+    <circle cx="1062" cy="516" r="52" fill="#ff7a18" opacity="0.88" />
+    <circle cx="944" cy="516" r="36" fill="#00c2a8" opacity="0.72" />
+  </g>
+  <text x="112" y="612" fill="#aec4d9" font-family="Helvetica, Arial, sans-serif" font-size="22">Generated with Pretext-powered text layout instead of hand-placed text nodes.</text>
+</svg>`
+      }
+
+      const missionMapSvg = () => {
+        const headline = textBlock({
+          text: 'Super Lobster OS Mission Flow',
+          font: '44px Georgia, Times New Roman, serif',
+          width: 680,
+          lineHeight: 52,
+          x: 76,
+          y: 84,
+          fill: '#172033',
+          fontWeight: 700,
+        })
+        const deck = textBlock({
+          text: 'A workspace operating layer that decides what to do, where to do it, and how safely to do it.',
+          font: '20px Helvetica, Arial, sans-serif',
+          width: 740,
+          lineHeight: 28,
+          x: 76,
+          y: 132,
+          fill: '#475569',
+        })
+        return `
+<svg width="1200" height="560" viewBox="0 0 1200 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mapBg" x1="108" y1="58" x2="1080" y2="488" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff7ed" />
+      <stop offset="1" stop-color="#f4fbf9" />
+    </linearGradient>
+    <linearGradient id="connector" x1="186" y1="286" x2="1018" y2="286" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f97316" />
+      <stop offset="1" stop-color="#0f766e" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="560" rx="28" fill="url(#mapBg)" />
+  ${headline}
+  ${deck}
+  <line x1="186" y1="286" x2="1018" y2="286" stroke="url(#connector)" stroke-width="10" stroke-linecap="round" />
+  ${card({ x: 76, y: 190, width: 224, height: 194, title: 'Mission', description: 'User goal, repository state, team memory, and constraints.', accent: '#fdba74', dark: true })}
+  ${card({ x: 340, y: 158, width: 224, height: 226, title: 'Plan', description: 'Turns prompts into sequenced steps grounded in the current workspace.', accent: '#c2410c' })}
+  ${card({ x: 604, y: 158, width: 224, height: 226, title: 'Guard', description: 'Scores commands as allow, review, or deny before execution.', accent: '#1d4ed8' })}
+  ${card({ x: 868, y: 158, width: 256, height: 226, title: 'Route + Remember', description: 'Chooses terminal, GitHub, Slack, or mobile surfaces and stores durable learning.', accent: '#0f766e' })}
+  <text x="78" y="478" fill="#64748b" font-family="Helvetica, Arial, sans-serif" font-size="18">Current alpha: config init, mission planning, command safety, report export, channel routing, and persistent workspace memory.</text>
+</svg>`
+      }
+
+      window.generateReadmeArt = () => ({
+        hero: heroSvg(),
+        missionMap: missionMapSvg(),
+      })
+    </script>
+  </body>
+</html>

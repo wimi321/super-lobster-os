@@ -7,6 +7,7 @@
     "lobsteros": "src/cli.mjs"
   },
   "scripts": {
+    "art:generate": "node scripts/generate-readme-art.mjs",
     "start": "node src/cli.mjs",
     "demo": "node src/cli.mjs demo --message \"audit the payment retry path\"",
     "report": "node src/cli.mjs report --message \"prepare the launch plan\"",
@@ -28,5 +29,11 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "dependencies": {
+    "@chenglou/pretext": "^0.0.3"
+  },
+  "devDependencies": {
+    "playwright": "^1.58.2"
   }
 }

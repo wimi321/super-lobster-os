@@ -21,6 +21,8 @@ Super Lobster OS documentation is organized to support both quick discovery and 
 - [Hero Graphic](./assets/lobster-hero.svg)
 - [Mission Map](./assets/mission-map.svg)
 
+These SVGs are generated from a browser-side layout pipeline using [`@chenglou/pretext`](https://github.com/chenglou/pretext), so README typography can be regenerated instead of hand-positioned.
+
 ## Reading Order
 
 1. Start with the main README for product positioning.
